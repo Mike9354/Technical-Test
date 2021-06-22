@@ -1,0 +1,6 @@
+﻿@model IEnumerable<NetC.JuniorDeveloperExam.Web.Models.BlogPost>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.React("Home", new { data = Model })

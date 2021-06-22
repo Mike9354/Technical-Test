@@ -1,0 +1,12 @@
+﻿@model NetC.JuniorDeveloperExam.Web.Models.BlogPost
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.React("Blog", new
+{
+    data = Model,
+    url = Url.Action("Comments"),
+    submitUrl = Url.Action("AddComment"),
+    pollInterval = 2000,
+})
